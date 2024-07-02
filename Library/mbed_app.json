@@ -1,0 +1,14 @@
+{
+    "target_overrides": {
+        "*": {            
+            "platform.stdio-convert-newlines": 1,
+            "target.features_add": ["STORAGE"],
+            "target.components_add": ["SD"],
+            "sd.SPI_MOSI": "D11",
+            "sd.SPI_MISO": "D12",
+            "sd.SPI_CLK": "D13",
+            "sd.SPI_CS": "D10",
+            "target.printf_lib": "std"
+        }
+    }
+}
